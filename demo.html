@@ -153,15 +153,6 @@
                                 </div>
                             </div>
                         </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card-group">
-                <div class="card " style="width: 18rem; border-top-width: 0">
-                    <div class="card-header">
-                        Device
-                    </div>
-                    <ul class="list-group list-group-flush">
                         <li class="list-group-item">
                             <div class="row">
                                 <div class="col-sm">
@@ -176,10 +167,6 @@
 
                                     </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="row">
                                 <div class="col-sm">
                                     <div class="input-group">
                                         <span>Tablet</span>
@@ -192,15 +179,7 @@
 
                                     </div>
                                 </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="card" style="width: 18rem; border-top-width: 0">
-                    <div class="card-header">
-                        Style
-                    </div>
-                    <ul class="list-group list-group-flush">
+
                         <li class="list-group-item">
                             <div class="row">
                                 <div class="col-sm">
@@ -215,10 +194,6 @@
 
                                     </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="row">
                                 <div class="col-sm">
                                     <div class="input-group">
                                         <span>Interstitial</span>
@@ -244,7 +219,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="basic-addon1">IDs</span>
                                 </div>
-                                    <!-- Build your select: -->
+                                <!-- Build your select: -->
                                 <select id="example-getting-started" multiple="multiple btn-outline-secondary">
                                     <option value="1">ID1</option>
                                     <option value="2">ID2</option>
@@ -262,6 +237,109 @@
                     </ul>
                 </div>
             </div>
+            <div class="card-group" style="margin-top: 2rem;">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-header">
+                        Ads Protection Placement
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="input-group">
+                                        <span>PTS</span>
+                                        <div class="col-sm-4">
+                                            <label class="switch">
+                                                <input type="checkbox" class="default" checked>
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col-sm">
+                                    <div class="input-group">
+                                        <span>Phone</span>
+                                        <div class="col-sm">
+                                            <label class="switch">
+                                                <input type="checkbox" class="default" checked>
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm">
+                                    <div class="input-group">
+                                        <span>Tablet</span>
+                                        <div class="col-sm">
+                                            <label class="switch">
+                                                <input type="checkbox" class="default" checked>
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col-sm">
+                                    <div class="input-group">
+                                        <span>Banner</span>
+                                        <div class="col-sm">
+                                            <label class="switch">
+                                                <input type="checkbox" class="default" checked>
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm">
+                                    <div class="input-group">
+                                        <span>Interstitial</span>
+                                        <div class="col-sm">
+                                            <label class="switch">
+                                                <input type="checkbox" class="default" checked>
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon2">IDs</span>
+                                </div>
+                                <!-- Build your select: -->
+                                <select id="example-getting-started2" multiple="multiple btn-outline-secondary">
+                                    <option value="1">ID1</option>
+                                    <option value="2">ID2</option>
+                                    <option value="3">ID3</option>
+                                    <option value="4">ID4</option>
+                                    <option value="5">ID5</option>
+                                    <option value="6">ID6</option>
+                                    <option value="7">ID7</option>
+                                    <option value="8">ID8</option>
+                                    <option value="9">ID9</option>
+                                    <option value="10">ID10</option>
+                                </select>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
         </div>
     </div>
 
@@ -289,6 +367,7 @@
 <script>
     $(document).ready(function () {
         $('#example-getting-started').multiselect({numberDisplayed: 11});
+        $('#example-getting-started2').multiselect({numberDisplayed: 11});
         $('.container').on('click', '.radioBtn a', function () {
             var sel = $(this).data('title');
             var tog = $(this).data('toggle');
