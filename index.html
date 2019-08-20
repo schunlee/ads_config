@@ -692,7 +692,7 @@
                     </div>
                 </div>
                 <div class="card-group">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card" style="width: 18rem;" id="card_exclude_cross_lineitem">
                         <div class="input-group card-header" style="padding: 0;">
                             <div class="col-sm-0.5" style="background-color: #e9ecef; padding: .75rem 1.25rem;">
                                 <input type="checkbox" aria-label="Checkbox for following text input"
@@ -936,8 +936,12 @@
         $('#is_exclude_cross_lineitem').click(function () {
             if ($(this).prop("checked")) {
                 $('#exclude_cross_lineitem_config').attr("style", "display:block;");
+                $('#card_exclude_cross_lineitem').attr("style", "border-bottom: 1px solid rgba(0,0,0,.125);")
+
+
             } else {
                 $('#exclude_cross_lineitem_config').attr("style", "display:none;");
+                $('#card_exclude_cross_lineitem').attr("style", "border-bottom: 0px;")
             }
 
         });
