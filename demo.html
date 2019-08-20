@@ -99,7 +99,6 @@
         }
     </style>
 </head>
-<body>
 <div class="container">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">Navbar</a>
@@ -115,7 +114,6 @@
             </div>
         </div>
     </nav>
-
     <div class="row">
         <div class="col-sm">
             <div class="card-group">
@@ -141,13 +139,13 @@
                                 </div>
                                 <div class="col-sm-4">
                                     <div class="input-group">
-                                        <span>PTS</span>
-                                        <div class="col-sm-4">
-                                            <label class="switch">
-                                                <input type="checkbox" class="default" checked>
-                                                <span class="slider round"></span>
-                                            </label>
-                                        </div>
+                                        <span style="margin-right: 48px">PTS</span>
+                                        <!--<div class="col-sm-4">-->
+                                        <label class="switch">
+                                            <input type="checkbox" class="default" checked>
+                                            <span class="slider round"></span>
+                                        </label>
+                                        <!--</div>-->
 
                                     </div>
                                 </div>
@@ -208,19 +206,11 @@
                                 </div>
                             </div>
                         </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card-group">
-                <div class="card" style="width: 18rem; border-top-width: 0">
-                    <ul class="list-group list-group-flush">
                         <li class="list-group-item">
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" id="basic-addon1">IDs</span>
-                                </div>
-                                <!-- Build your select: -->
-                                <select id="example-getting-started" multiple="multiple btn-outline-secondary">
+                            <label>
+                                <span class="align-middle text-center" style="margin-top: 5em">IDs</span>
+                                <select id="example-getting-started1" multiple="multiple btn-outline-secondary"
+                                        class="align-middle">
                                     <option value="1">ID1</option>
                                     <option value="2">ID2</option>
                                     <option value="3">ID3</option>
@@ -232,36 +222,27 @@
                                     <option value="9">ID9</option>
                                     <option value="10">ID10</option>
                                 </select>
-                            </div>
+                            </label>
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="card-group" style="margin-top: 2rem;">
                 <div class="card" style="width: 18rem;">
-                    <div class="card-header">
-                        Ads Protection Placement
+                    <div class="input-group card-header" style="padding: 0;">
+                        <div class="col-sm-0.5" style="background-color: #e9ecef; padding: .75rem 1.25rem;">
+                            <input type="checkbox" aria-label="Checkbox for following text input">
+                        </div>
+                        <div class="col-sm-4" style="padding: .75rem 1.25rem;">
+                            <label style="font-weight: bold" data-toggle="tooltip" data-placement="top"
+                                   title="add adunits to ads protection family placement">Ads Protection
+                                Placement</label>
+                        </div>
                     </div>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">
                             <div class="row">
-                                <div class="col-sm-4">
-                                    <div class="input-group">
-                                        <span>PTS</span>
-                                        <div class="col-sm-4">
-                                            <label class="switch">
-                                                <input type="checkbox" class="default" checked>
-                                                <span class="slider round"></span>
-                                            </label>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="row">
-                                <div class="col-sm">
+                                <div class="col-sm-6">
                                     <div class="input-group">
                                         <span>Phone</span>
                                         <div class="col-sm">
@@ -273,7 +254,7 @@
 
                                     </div>
                                 </div>
-                                <div class="col-sm">
+                                <div class="col-sm-6">
                                     <div class="input-group">
                                         <span>Tablet</span>
                                         <div class="col-sm">
@@ -289,7 +270,7 @@
                         </li>
                         <li class="list-group-item">
                             <div class="row">
-                                <div class="col-sm">
+                                <div class="col-sm-6">
                                     <div class="input-group">
                                         <span>Banner</span>
                                         <div class="col-sm">
@@ -301,7 +282,7 @@
 
                                     </div>
                                 </div>
-                                <div class="col-sm">
+                                <div class="col-sm-6">
                                     <div class="input-group">
                                         <span>Interstitial</span>
                                         <div class="col-sm">
@@ -316,12 +297,10 @@
                             </div>
                         </li>
                         <li class="list-group-item">
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" id="basic-addon2">IDs</span>
-                                </div>
-                                <!-- Build your select: -->
-                                <select id="example-getting-started2" multiple="multiple btn-outline-secondary">
+                            <label>
+                                <span class="align-middle text-center" style="margin-top: 5em">IDs</span>
+                                <select id="example-getting-started2" multiple="multiple btn-outline-secondary"
+                                        class="align-middle">
                                     <option value="1">ID1</option>
                                     <option value="2">ID2</option>
                                     <option value="3">ID3</option>
@@ -333,17 +312,467 @@
                                     <option value="9">ID9</option>
                                     <option value="10">ID10</option>
                                 </select>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card-group" style="margin-top: 2rem;">
+                <div class="card" style="width: 18rem;">
+                    <div class="input-group card-header" style="padding: 0;">
+                        <div class="col-sm-0.5" style="background-color: #e9ecef; padding: .75rem 1.25rem;">
+                            <input type="checkbox" aria-label="Checkbox for following text input">
+                        </div>
+                        <div class="col-sm-4" style="padding: .75rem 1.25rem;">
+                            <label style="font-weight: bold" data-toggle="tooltip" data-placement="top"
+                                   title="add adunits to studio placement">Studio Placement</label>
+                        </div>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="input-group">
+                                        <span>Phone</span>
+                                        <div class="col-sm">
+                                            <label class="switch">
+                                                <input type="checkbox" class="default" checked>
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="input-group">
+                                        <span>Tablet</span>
+                                        <div class="col-sm">
+                                            <label class="switch">
+                                                <input type="checkbox" class="default" checked>
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
                             </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="input-group">
+                                        <span>Banner</span>
+                                        <div class="col-sm">
+                                            <label class="switch">
+                                                <input type="checkbox" class="default" checked>
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="input-group">
+                                        <span>Interstitial</span>
+                                        <div class="col-sm">
+                                            <label class="switch">
+                                                <input type="checkbox" class="default" checked>
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <label>
+                                <span class="align-middle text-center" style="margin-top: 5em">IDs</span>
+                                <select id="example-getting-started3" multiple="multiple btn-outline-secondary"
+                                        class="align-middle">
+                                    <option value="1">ID1</option>
+                                    <option value="2">ID2</option>
+                                    <option value="3">ID3</option>
+                                    <option value="4">ID4</option>
+                                    <option value="5">ID5</option>
+                                    <option value="6">ID6</option>
+                                    <option value="7">ID7</option>
+                                    <option value="8">ID8</option>
+                                    <option value="9">ID9</option>
+                                    <option value="10">ID10</option>
+                                </select>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card-group" style="margin-top: 2rem;">
+                <div class="card" style="width: 18rem;">
+                    <div class="input-group card-header" style="padding: 0;">
+                        <div class="col-sm-0.5" style="background-color: #e9ecef; padding: .75rem 1.25rem;">
+                            <input type="checkbox" aria-label="Checkbox for following text input">
+                        </div>
+                        <div class="col-sm-4" style="padding: .75rem 1.25rem;">
+                            <label style="font-weight: bold" data-toggle="tooltip" data-placement="top"
+                                   title="add adunits to unified rule">Unified Rule</label>
+                        </div>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="input-group">
+                                        <span>Phone</span>
+                                        <div class="col-sm">
+                                            <label class="switch">
+                                                <input type="checkbox" class="default" checked>
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="input-group">
+                                        <span>Tablet</span>
+                                        <div class="col-sm">
+                                            <label class="switch">
+                                                <input type="checkbox" class="default" checked>
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="input-group">
+                                        <span>Banner</span>
+                                        <div class="col-sm">
+                                            <label class="switch">
+                                                <input type="checkbox" class="default" checked>
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="input-group">
+                                        <span>Interstitial</span>
+                                        <div class="col-sm">
+                                            <label class="switch">
+                                                <input type="checkbox" class="default" checked>
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <label>
+                                <span class="align-middle text-center" style="margin-top: 5em">IDs</span>
+                                <select id="example-getting-started4" multiple="multiple btn-outline-secondary"
+                                        class="align-middle">
+                                    <option value="1">ID1</option>
+                                    <option value="2">ID2</option>
+                                    <option value="3">ID3</option>
+                                    <option value="4">ID4</option>
+                                    <option value="5">ID5</option>
+                                    <option value="6">ID6</option>
+                                    <option value="7">ID7</option>
+                                    <option value="8">ID8</option>
+                                    <option value="9">ID9</option>
+                                    <option value="10">ID10</option>
+                                </select>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card-group" style="margin-top: 2rem;">
+                <div class="card" style="width: 18rem;">
+                    <div class="input-group card-header" style="padding: 0;">
+                        <div class="col-sm-0.5" style="background-color: #e9ecef; padding: .75rem 1.25rem;">
+                            <input type="checkbox" aria-label="Checkbox for following text input">
+                        </div>
+                        <div class="col-sm-4" style="padding: .75rem 1.25rem;">
+                            <label style="font-weight: bold" data-toggle="tooltip" data-placement="top"
+                                   title="add adunits to mopub yield group">Mopub Yield Group</label>
+                        </div>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="input-group">
+                                        <span>Phone</span>
+                                        <div class="col-sm">
+                                            <label class="switch">
+                                                <input type="checkbox" class="default" checked>
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="input-group">
+                                        <span>Tablet</span>
+                                        <div class="col-sm">
+                                            <label class="switch">
+                                                <input type="checkbox" class="default" checked>
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="input-group">
+                                        <span>Banner</span>
+                                        <div class="col-sm">
+                                            <label class="switch">
+                                                <input type="checkbox" class="default" checked>
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="input-group">
+                                        <span>Interstitial</span>
+                                        <div class="col-sm">
+                                            <label class="switch">
+                                                <input type="checkbox" class="default" checked>
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <label>
+                                <span class="align-middle text-center" style="margin-top: 5em">IDs</span>
+                                <select id="example-getting-started5" multiple="multiple btn-outline-secondary"
+                                        class="align-middle">
+                                    <option value="1">ID1</option>
+                                    <option value="2">ID2</option>
+                                    <option value="3">ID3</option>
+                                    <option value="4">ID4</option>
+                                    <option value="5">ID5</option>
+                                    <option value="6">ID6</option>
+                                    <option value="7">ID7</option>
+                                    <option value="8">ID8</option>
+                                    <option value="9">ID9</option>
+                                    <option value="10">ID10</option>
+                                </select>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card-group" style="margin-top: 2rem;">
+                <div class="card" style="width: 18rem;">
+                    <div class="input-group card-header" style="padding: 0;">
+                        <div class="col-sm-0.5" style="background-color: #e9ecef; padding: .75rem 1.25rem;">
+                            <input type="checkbox" aria-label="Checkbox for following text input">
+                        </div>
+                        <div class="col-sm-4" style="padding: .75rem 1.25rem;">
+                            <label style="font-weight: bold" data-toggle="tooltip" data-placement="top"
+                                   title="add adunits to ebda yield group">EBDA Yield Group</label>
+                        </div>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="input-group">
+                                        <span>Phone</span>
+                                        <div class="col-sm">
+                                            <label class="switch">
+                                                <input type="checkbox" class="default" checked>
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="input-group">
+                                        <span>Tablet</span>
+                                        <div class="col-sm">
+                                            <label class="switch">
+                                                <input type="checkbox" class="default" checked>
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="input-group">
+                                        <span>Banner</span>
+                                        <div class="col-sm">
+                                            <label class="switch">
+                                                <input type="checkbox" class="default" checked>
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="input-group">
+                                        <span>Interstitial</span>
+                                        <div class="col-sm">
+                                            <label class="switch">
+                                                <input type="checkbox" class="default" checked>
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <label>
+                                <span class="align-middle text-center" style="margin-top: 5em">IDs</span>
+                                <select id="example-getting-started6" multiple="multiple btn-outline-secondary"
+                                        class="align-middle">
+                                    <option value="1">ID1</option>
+                                    <option value="2">ID2</option>
+                                    <option value="3">ID3</option>
+                                    <option value="4">ID4</option>
+                                    <option value="5">ID5</option>
+                                    <option value="6">ID6</option>
+                                    <option value="7">ID7</option>
+                                    <option value="8">ID8</option>
+                                    <option value="9">ID9</option>
+                                    <option value="10">ID10</option>
+                                </select>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card-group" style="margin-top: 2rem;">
+                <div class="card" style="width: 18rem;">
+                    <div class="input-group card-header" style="padding: 0;">
+                        <div class="col-sm-0.5" style="background-color: #e9ecef; padding: .75rem 1.25rem;">
+                            <input type="checkbox" aria-label="Checkbox for following text input">
+                        </div>
+                        <div class="col-sm-4" style="padding: .75rem 1.25rem;">
+                            <label style="font-weight: bold" data-toggle="tooltip" data-placement="top"
+                                   title="exclude adunits from cross lineitem">Exclude Cross Lineitem</label>
+                        </div>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="input-group">
+                                        <span>Phone</span>
+                                        <div class="col-sm">
+                                            <label class="switch">
+                                                <input type="checkbox" class="default" checked>
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="input-group">
+                                        <span>Tablet</span>
+                                        <div class="col-sm">
+                                            <label class="switch">
+                                                <input type="checkbox" class="default" checked>
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="input-group">
+                                        <span>Banner</span>
+                                        <div class="col-sm">
+                                            <label class="switch">
+                                                <input type="checkbox" class="default" checked>
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="input-group">
+                                        <span>Interstitial</span>
+                                        <div class="col-sm">
+                                            <label class="switch">
+                                                <input type="checkbox" class="default" checked>
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <label>
+                                <span class="align-middle text-center" style="margin-top: 5em">IDs</span>
+                                <select id="example-getting-started8" multiple="multiple btn-outline-secondary"
+                                        class="align-middle">
+                                    <option value="1">ID1</option>
+                                    <option value="2">ID2</option>
+                                    <option value="3">ID3</option>
+                                    <option value="4">ID4</option>
+                                    <option value="5">ID5</option>
+                                    <option value="6">ID6</option>
+                                    <option value="7">ID7</option>
+                                    <option value="8">ID8</option>
+                                    <option value="9">ID9</option>
+                                    <option value="10">ID10</option>
+                                </select>
+                            </label>
                         </li>
                     </ul>
                 </div>
             </div>
 
-
         </div>
     </div>
+    <footer class="py-3 bg-dark navbar-fixed-bottom">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; NEXA 2019</p>
+        </div>
+    </footer>
 
 </div>
+
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -366,8 +795,19 @@
 <link rel="stylesheet" href="css/bootstrap-multiselect.css" type="text/css"/>
 <script>
     $(document).ready(function () {
-        $('#example-getting-started').multiselect({numberDisplayed: 11});
+        $('#example-getting-started1').multiselect({numberDisplayed: 11});
         $('#example-getting-started2').multiselect({numberDisplayed: 11});
+        $('#example-getting-started3').multiselect({numberDisplayed: 11});
+        $('#example-getting-started4').multiselect({numberDisplayed: 11});
+        $('#example-getting-started5').multiselect({numberDisplayed: 11});
+        $('#example-getting-started6').multiselect({numberDisplayed: 11});
+        $('#example-getting-started7').multiselect({numberDisplayed: 11});
+        $('#example-getting-started8').multiselect({numberDisplayed: 11});
+
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        });
+
         $('.container').on('click', '.radioBtn a', function () {
             var sel = $(this).data('title');
             var tog = $(this).data('toggle');
